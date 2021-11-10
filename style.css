@@ -1,0 +1,75 @@
+:root {}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #877;
+  padding: 50px 10px;
+}
+
+main {
+  text-align: center;
+}
+
+h1 {}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 50px 0;
+}
+
+.container .item {}
+
+.container .number {
+  margin-bottom: 15px;
+  font-size: 35px;
+  padding: 15px 0;
+  background: hsl(0, 53%, 61%);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .number::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #00000033;
+  height: 50%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.container .dots {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.dots::before, .dots::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  background: #000000cc;
+  border-radius: 100px;
+}
+
+.dots::before {
+  left: -5px;
+}
+
+.dots::after {
+  right: -5px;
+}
+
+.container .label {}
