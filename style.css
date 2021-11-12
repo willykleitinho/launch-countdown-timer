@@ -11,7 +11,9 @@
   --clr-2: hsl(235, 16%, 14%);
   --clr-3: hsl(234, 17%, 12%);
 
-  --Fontsize: 14px;
+  --font-size-number: 35px;
+  --font-size-label: 7px;
+  --font-size-label-spacing: 3px;
 
   --font-family: "Red Hat Text", sans-serif;
 }
@@ -59,7 +61,7 @@ h1 {
 
 .container .number {
   margin-bottom: 12px;
-  font-size: 35px;
+  font-size: var(--font-size-number);
   color: var(--clr-text-primary);
   padding: 15% 0;
   background: var(--clr-1);
@@ -109,8 +111,8 @@ h1 {
 
 .container .label {
   color: var(--clr-text-secondary);
-  font-size: 7px;
-  letter-spacing: 3px;
+  font-size: var(--font-size-label);
+  letter-spacing: var(--font-size-label-spacing);
   text-transform: uppercase;
 }
 
@@ -136,6 +138,22 @@ footer li + li {
 a:focus {
   outline: 2px dotted rgb(223, 223, 223);
   outline-offset: 4px;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    padding: 135px 0;
+    background-size: 100%, 100%, 100%;
+    background-position: bottom;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+
+  .container {
+    margin: 110px auto;
+  }
 }
 
 .attribution {
