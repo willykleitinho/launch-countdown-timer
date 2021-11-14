@@ -154,6 +154,10 @@ a:focus {
     top: -5px;
     border-width: 5px;
   }
+  
+  footer {
+    padding-bottom: 67px;
+  }
 }
 
 .attribution {
