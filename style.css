@@ -11,9 +11,9 @@
   --clr-2: hsl(235, 16%, 14%);
   --clr-3: hsl(234, 17%, 12%);
 
-  --font-size-number: 35px;
-  --font-size-label: 7px;
-  --font-size-label-spacing: 3px;
+  --font-size-number: clamp(35px, 9.3vw, 73.66px);
+  --font-size-label: clamp(7px, 1.86vw, 14.72px);
+  --font-size-label-spacing: clamp(3px, 0.86vw, 6.33px);
 
   --font-family: "Red Hat Text", sans-serif;
 }
