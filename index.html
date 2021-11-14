@@ -1,61 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <script src="script.js"></script>
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Launch countdown timer</title>
-</head>
-<body>
-  <main>
-    <h1>We're launching soon</h1>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+   >
+    <link rel="stylesheet" href="style.css">
 
-    <div class="container">
-      <div class="item">
-        <div class="number" >
-          <span id="days-left">08</span>
-          <div class="dots"></div>
-        </div>
-        <div class="label">Days</div>
-      </div>
-      <div class="item">
-        <div class="number">
-          <span id="hours-left">23</span>
-          <div class="dots"></div>
-        </div>
-        <div class="label">Hours</div>
-      </div>
-      <div class="item">
-        <div class="number">
-          <span id="minutes-left">55</span>
-          <div class="dots"></div>
-        </div>
-        <div class="label">Minutes</div>
-      </div>
-      <div class="item">
-        <div class="number">
-          <span id="seconds-left">41</span>
-          <div class="dots"></div>
-        </div>
-        <div class="label">Seconds</div>
-      </div>
-    </div>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      <br>
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
-  </main>
+    <script src="script.js"></script>
 
-  <footer>
-    <ul>
-      <li><a href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a></li>
-      <li><a href="#"><img src="images/icon-pinterest.svg" alt="Pinterest"></a></li>
-      <li><a href="#"><img src="images/icon-instagram.svg" alt="Instagram"></a></li>
-    </ul>
-  </footer>
-</body>
+    <title>Frontend Mentor | Launch countdown timer</title>
+  </head>
+  <body>
+    <main>
+      <h1>We're launching soon</h1>
+
+      <section class="container">
+        <div class="number">
+          <p>
+            <span id="days-left">08</span>
+            <span class="label">Days</span>
+          </p>
+          <div class="dots"></div>
+        </div>
+
+        <div class="number">
+          <p>
+            <span id="hours-left">23</span>
+            <span class="label">Hours</span>
+          </p>
+          <div class="dots"></div>
+        </div>
+
+        <div class="number">
+          <p>
+            <span id="minutes-left">55</span>
+            <span class="label">Minutes</span>
+          </p>
+          <div class="dots"></div>
+        </div>
+        
+        <div class="number">
+          <p>
+            <span id="seconds-left">41</span>
+            <span class="label">Seconds</span>
+          </p>
+          <div class="dots"></div>
+        </div>
+      </section>
+
+      <section class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        <br>
+        Coded by <a href="https://github.com/willykleitinho">willykleitinho</a>.
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="#" title="Facebook">
+            <img src="images/icon-facebook.svg" alt="Facebook">
+          </a>
+        </li>
+        <li>
+          <a href="#" title="Pinterest">
+            <img src="images/icon-pinterest.svg" alt="Pinterest">
+          </a>
+        </li>
+        <li>
+          <a href="#" title="Instagram">
+            <img src="images/icon-instagram.svg" alt="Instagram">
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
